@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Online Resume</title>
+  <meta name="author" content="Rich Wilson">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <script defer src="./script.js"></script>
+  <script>
+	  $(function() {
+		var $pull 		= $('#pull');
+			$menu 		= $('nav ul');
+			$menuHeight	= $menu.height();
+
+		$($pull).on('click', function(e) {
+			e.preventDefault();
+			$menu.slideToggle();
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="main">
+<a name="top"></a>
+<div id="w" itemscope itemtype="http://schema.org/Person">
+	<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="#profile">Profile</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#skillset">Skills</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#interests">Interests</a></li>
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+	<header class="clearfix">
+		<div id="info">			
+			<h1><span itemprop="name">Ian Wilson</span></h1>
+			<h3><span itemprop="jobTitle">Looking for work</span></h3>
+			<small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<span class="address">
+			  <a href="https://www.google.com/maps?q=Broomfield,+CO,+USA&hl=en&sll=38.997934,-105.550567&sspn=6.461487,11.634521&hnear=Broomfield,+Broomfield+County,+Colorado&t=m&z=11"><span itemprop="addressLocality">Broomfield</span>,<span itemprop="addressRegion">Colorado</span>,<span itemprop="addressCountry">USA</a></span>
+			</span>  
+			</small>
+			<small><span id="email"><span itemprop="email"><a href="mailto: ianwilson.p@gmail.com">ianwilson.p@gmail.com</a></span></span></small>
+			<small><span class="workstatus"><span>Valid Colorado Driving License</span></span></small>
+		</div>
+		
+		<div id="photo">
+			<img src="ian.png" alt="Ian Wilson" itemprop="image" />
+		</div>
+	</header>
+	<a name="profile"></a>
+	<section id="profile">
+			<span class="home-visible"><a class="home" href="#top"><img src="home.png"/></a></span><h2>Profile</h2>
+			<p>Use Procreate to design lolgs and images for friends and family</p>
+			<p>Casted Esports as a Play by Play commentator</p>
+			<p>Whetstone and Benchgrinder knife and blade sharpening</p>
+	</section>
+
+	<a name="experience"></a>
+	<section id="experience">
+		<span class="home-visible"><a class="home" href="#top"><img src="home.png"/></a></span><h2>Work Experience</h2>
+		<p>Knife sharpening for friends and family ~ 2025-Current | <span class="address"><span>Broomfield, USA</span></span></p>
+		<p>Play by Play commentator for Risen Esports ~ 2023-Current | Online</p>
+		<p>Esports commentator for Lakewood Local Host ~ 2024-2025 | <span class="address"><span>Lakewood, CO</span></span></p>
+	</section>
+
+	<a name="skillset"></a>	
+	<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+	<span class="home-visible"><a class="home" href="#top"><img src="home.png"/></a></span><h2>Skills</h2>
+		<ul>
+			<li itemprop="itemListElement">Play by Play and Color Esports Commentator</li>
+			<li itemprop="itemListElement">Whetstone and benchgrinder knife and blade sharpening</li>
+			<li itemprop="itemListElement">Procreate (Digital illustration software)</li>
+			<li itemprop="itemListElement">Building mechanical keyboards</li>
+		</ul>
+	</section>	
+
+	<a name="education"></a>
+	<section id="education">
+			<span class="home-visible"><a class="home" href="#top"><img src="home.png"/></a></span><h2>Education</h2>
+			<p>High school graduate (Five Star Online &amp: Legacy HS) ~ 2024 | <span class="address "><span itemprop="alumniOf">Broomfield, CO</span></span></p>
+	</section>
+
+	<a name="interests"></a>
+	<section id="interests">
+			<span class="home-visible"><a class="home" href="#top"><img src="home.png"/></a></span><h2>Interests</h2>
+			<p>Bass guitar playing</p>
+			<p>Gaming (League of Legends, Overwatch, Cyperpunk 2077, etc.)</p>
+			<p>Traveling</p>
+			<p>Basketball</p>
+			<p>Tennis and table tennis</p>
+			<p>Cycling</p>
+			<p>My graphic designs:</p>
+			<div class="gallery">
+				<div class="gallery__item">
+					<img src="./ian.png" />
+				</div>
+       		 </div>
+	</section>
+</div>
+	</div>
+</body>
+</html>
